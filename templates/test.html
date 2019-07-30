@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+
+<br />
+
+<div class="container">
+
+    <style>
+        .form-simple .font-small {
+            font-size: 0.8rem;
+        }
+
+        .form-simple .header {
+            border-top-left-radius: .3rem;
+            border-top-right-radius: .3rem;
+        }
+
+        .form-simple input[type=text]:focus:not([readonly]) {
+            border-bottom: 1px solid #ff3547;
+            -webkit-box-shadow: 0 1px 0 0 #ff3547;
+            box-shadow: 0 1px 0 0 #ff3547;
+        }
+
+        .form-simple input[type=text]:focus:not([readonly])+label {
+            color: #4f4f4f;
+        }
+
+        .form-simple input[type=password]:focus:not([readonly]) {
+            border-bottom: 1px solid #ff3547;
+            -webkit-box-shadow: 0 1px 0 0 #ff3547;
+            box-shadow: 0 1px 0 0 #ff3547;
+        }
+
+        .form-simple input[type=password]:focus:not([readonly])+label {
+            color: #4f4f4f;
+        }
+    </style>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Hello, Welcome!</h1>
+  <p class="lead">Read the guideline carefully in other to install the CPN ITA Mobile on your Device,
+    for any help regarding the Mobile Application, come forward to the Secretariat.</p>
+  <hr class="my-4">
+  <h3>Setting up your device</h3>
+  <p>
+From your smartphone or tablet running Android 4.0 or higher, go to Settings, scroll down
+to Security, and select Unknown sources. Selecting this option will allow you to install apps outside
+of the Google Play store. Depending on your device, you can also choose to be warned before installing harmful apps.
+This can be enabled by selecting the Verify apps option in the Security settings.</p>
+
+<h3>Process of Installing the App</h3>
+<p>Go to your app drawer and click Downloads; here you will find the file you just downloaded.
+Open the file and install the app.</p>
+
+
+
+
+
+
+            <span>
+                <a href="http://assembly.pythonanywhere.com/media/materials/finalReleased.apk" class="link">
+                    <img class="card-img-top" src="{% static "play.png" %}" alt="Download the CPN App">
+                </a>
+            </span>
+</div>
+
+
+
+
+</div>
+{% endblock %}
